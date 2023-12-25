@@ -38,7 +38,7 @@ async function run() {
       res.send(result);
     });
 
-    //menu created
+    //task created
     app.post("/tasks", async (req, res) => {
       const query = req.body;
       const result = await taskCollection.insertOne(query);
